@@ -1,0 +1,5 @@
+---
+- name: Cambio de Contrasena - Windows
+  hosts: all
+  roles: 
+    - User

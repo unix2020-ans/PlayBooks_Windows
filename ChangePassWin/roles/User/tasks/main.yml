@@ -1,0 +1,7 @@
+---
+- name: Cambio de Contrasena - Windows
+  win_user: 
+    name: "{{ item.username }}"
+    password: "{{ item.password }}"
+  with_items: 
+    - "{{ users }}"

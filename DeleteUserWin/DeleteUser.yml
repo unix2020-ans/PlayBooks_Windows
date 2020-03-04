@@ -1,0 +1,5 @@
+---
+- name: Eliminacion de Usuarios - Windows
+  hosts: all
+  roles: 
+    - User

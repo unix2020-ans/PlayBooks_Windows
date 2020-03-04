@@ -1,0 +1,12 @@
+---
+- name: Creacion de Usuarios - Windows
+  win_user: 
+    name: "{{ item.username }}"
+    fullname: "{{ item.username }}"
+    description: "Usuario Creado Bajo el Caso - {{ item.case }}"
+    password: "{{ item.password }}"
+    state: present
+    groups:
+      - "{{ item.group }}"
+  with_items: 
+    - "{{ users }}"
